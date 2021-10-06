@@ -2,18 +2,17 @@
   <mat-drawer #drawer [mode]="isShowHideFlag">
     <mat-icon aria-hidden="false" class="close" (click)="drawer.toggle()">close</mat-icon>
     <br>
-    <h1>W3hubs</h1>
+    <h1>Landing Page</h1>
     <mat-list role="list">
-      <mat-list-item role="listitem"><a mat-button>Link 1</a></mat-list-item>
-      <mat-list-item role="listitem"><a mat-button>Link 2 </a></mat-list-item>
-      <mat-list-item role="listitem"><a mat-button>Link 3</a></mat-list-item>
-      <mat-list-item role="listitem"><a mat-button>Link 4</a></mat-list-item>
+      <mat-list-item role="listitem"><a mat-button href="#fashion">Fashion</a></mat-list-item>
+      <mat-list-item role="listitem"><a mat-button href="#artistic">Artistic</a></mat-list-item>
+      <mat-list-item role="listitem"><a mat-button href="#portrait">Portrait</a></mat-list-item>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
     <mat-toolbar class="nav">
       <mat-list role="list">
-        <mat-list-item role="listitem"><a mat-button href="#fashion" >Fashion</a></mat-list-item>
+        <mat-list-item role="listitem"><a mat-button href="#fashion">Fashion</a></mat-list-item>
         <mat-list-item role="listitem"><a mat-button href="#artistic">Artistic</a></mat-list-item>
         <mat-list-item role="listitem"><a mat-button href="#portrait">Portrait</a></mat-list-item>
 
@@ -24,7 +23,7 @@
         reorder
       </mat-icon>
       <div class="silder-content">
-        <video controls autoplay src="../assets/images/video.mp4" loop></video>
+        <video controls autoplay src="../assets/images/video.mp4"loop></video>
       </div>
     </div>
     <div class="features">
@@ -32,19 +31,24 @@
         <div class="column">
           <mat-icon aria-hidden="false" aria-label="Example home icon">photo_camera</mat-icon>
           <h3>Fashion Photo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro sed quae sequi minima! Deleniti labore nisi non aliquam iste sint laboriosam a. Praesentium nemo molestiae soluta, aliquam beatae magnam?
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro sed quae sequi minima! Deleniti labore
+            nisi non aliquam iste sint laboriosam a. Praesentium nemo molestiae soluta, aliquam beatae magnam?
           </p>
         </div>
         <div class="column">
           <mat-icon aria-hidden="false" aria-label="Example home icon">photo_camera</mat-icon>
           <h3>Artistic Photo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fugiat consequuntur dolorum obcaecati libero distinctio ipsa consequatur, quas possimus sapiente, vitae repellat exercitationem. Vero in fugiat cumque harum sed? Hic?
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fugiat consequuntur dolorum obcaecati
+            libero distinctio ipsa consequatur, quas possimus sapiente, vitae repellat exercitationem. Vero in fugiat
+            cumque harum sed? Hic?
           </p>
         </div>
         <div class="column">
           <mat-icon aria-hidden="false" aria-label="Example home icon">photo_camera</mat-icon>
           <h3>Portrait Photo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fugiat consequuntur dolorum obcaecati libero distinctio ipsa consequatur, quas possimus sapiente, vitae repellat exercitationem. Vero in fugiat cumque harum sed? Hic?
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fugiat consequuntur dolorum obcaecati
+            libero distinctio ipsa consequatur, quas possimus sapiente, vitae repellat exercitationem. Vero in fugiat
+            cumque harum sed? Hic?
           </p>
         </div>
       </div>
@@ -54,20 +58,23 @@
       <div class="row">
         <div class="column center-content">
           <h3>Fashion Photo</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus minima. Nemo, ducimus quis nesciunt ipsam enim cum corporis repellendus odit non aut, est ipsum doloribus neque placeat similique minus!
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus minima. Nemo, ducimus quis nesciunt
+            ipsam enim cum corporis repellendus odit non aut, est ipsum doloribus neque placeat similique minus!
           </p>
         </div>
         <div id="fashion" class="column">
-          <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Fashion-photography_P1_900x420?$pjpeg$&jpegSize=200&wid=900">
+          <img
+            src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Fashion-photography_P1_900x420?$pjpeg$&jpegSize=200&wid=900">
         </div>
       </div>
       <div class="row">
-        <div  id="artistic"class="column">
+        <div id="artistic" class="column">
           <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a944d527273881.563626509ed1e.jpg">
         </div>
         <div class="column center-content">
           <h3>Artistic Photo</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus minima. Nemo, ducimus quis nesciunt ipsam enim cum corporis repellendus odit non aut, est ipsum doloribus neque placeat similique minus!
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus minima. Nemo, ducimus quis nesciunt
+            ipsam enim cum corporis repellendus odit non aut, est ipsum doloribus neque placeat similique minus!
           </p>
         </div>
       </div>
@@ -75,27 +82,68 @@
       <div id="portrait" class="row">
         <div class="column center-content">
           <h3>Portrait Photo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio temporibus blanditiis architecto quos nam, quod modi nostrum laboriosam sunt accusantium aliquid! Laudantium eligendi tenetur ut voluptas. Quisquam dicta optio soluta!
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio temporibus blanditiis architecto quos nam,
+            quod modi nostrum laboriosam sunt accusantium aliquid! Laudantium eligendi tenetur ut voluptas. Quisquam
+            dicta optio soluta!
         </div>
-        <div  class="column">
+        <div class="column">
           <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg">
         </div>
       </div>
     </div>
-    <!-- <div class="contactus">
-      <h2>Subscribe now To get Updates</h2>
-      <form>
-        <mat-form-field appearance="fill">
-          <mat-label>Subscribe</mat-label>
-          <input matInput>
+    <div class="footer">
+
+
+
+
+    <div class="form">
+      <div class="example-form">
+        <!-- <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Full Name</mat-label>
+          <input matInput placeholder="NAME SUBNAME" value="xxxx xxxx xxxxxx">
         </mat-form-field>
-        <button mat-flat-button>Subscribe Now</button>
-      </form>
-    </div> -->
-    <div class="footer" >
-      <mat-toolbar color="primary">
-        <span> © María Sarmiento Cobo 2021</span>
-      </mat-toolbar>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Mail</mat-label>
+          <input matInput placeholder="MAIL" value="xxxx@xxx.xx">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Phone Number</mat-label>
+          <input matInput placeholder="PHONE NUMBER" value="+00 000 000 000">
+        </mat-form-field> -->
+
+
+        <div class="form">
+          <mat-form-field appearance="fill">
+            <mat-label class="label">Full Name</mat-label>
+            <input matInput [formControl]="fullName" required>
+            <mat-error *ngIf="fullName.invalid">{{getErrorMessage()}}</mat-error>
+
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label class="label">Email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label class="label">Phone Number</mat-label>
+            <input matInput [formControl]="phone" required>
+            <mat-error *ngIf="phone.invalid">{{getErrorMessage()}}</mat-error>
+
+          </mat-form-field>
+        </div>
+      </div>
     </div>
+    <button mat-raised-button (click)="openDialog()">Send</button>
+    <div class="span">
+      <span> © María Sarmiento Cobo 2021</span>
+    </div>
+  </div>
   </mat-drawer-content>
+
+
+
 </mat-drawer-container>

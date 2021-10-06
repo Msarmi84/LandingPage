@@ -48,7 +48,7 @@ h1 {
 
   .close {
     font-size: 28px;
-    color: #fff;
+    color: rgb(33, 31, 31) !important;
     float: right;
     position: absolute;
     right: 15px;
@@ -90,6 +90,7 @@ h1 {
 .mat-list-base .mat-list-item {
   color: #fff !important;
 }
+
 
 .mat-icon {
   color: $primary;
@@ -134,7 +135,7 @@ img {
 
   .mat-icon {
     font-size: 40px;
-    color: #fff;
+    color: rgb(34, 30, 30);
     float: right;
     cursor: pointer;
   }
@@ -263,11 +264,46 @@ img {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(12, 12, 12, 0.749);
-  span {
-    margin: auto;
+  text-align: center;
+  color: #f0f3f5;
+  .form{
+    display: flex;
+    justify-content: center;
+  }
+  .span {
+    margin: 20px 0;
   }
 }
+.example-form {
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  margin-right: 10px;
+  .example-full-width {
+    width: 100%;
+  }
+  mat-label{
+    color: white;
+    font-size:x-large
+  }
+  input {
+    color: rgba(255, 255, 255, 0.502);
+  }
+
+}
+.mat-dialog-actions {
+  justify-content: center;
+}
+
+
 
 @media (max-width: 842px) {
   h3 {
@@ -281,6 +317,16 @@ img {
 
 .mat-form-field.mat-focused .mat-form-field-ripple {
   background-color: $primary !important;
+}
+
+
+@media (max-width: 1024px) {
+  // .form {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 0;
+  // }
 }
 
 @media (max-width: 768px) {
@@ -327,11 +373,17 @@ img {
 }
 
 @media (max-width: 542px) {
-  .contactus {
-    height: auto;
-
-    form {
-      width: 70%;
+  .footer{
+    .form {
+      flex-direction: column;
     }
-  }
+
+    .mat-form-field-infix {
+      width: 100%;
+    }
+    .label {
+      font-size: 12px;
+    }
+
+}
 }
